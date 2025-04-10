@@ -6,11 +6,11 @@ import os
 import time
 import queue
 import m3u8_To_MP4
-from loggingInterface import log_print, report
-from driverController import DriverController
+from logger import log_print, report
+from controller import DriverController
 from model import getLogQueue, Course, log_queue, VideoActivity
-VERSION = 'v0.2.6a'
-DATE = '2024-09-12(목)'
+VERSION = 'v0.2.7a'
+DATE = '2025-04-10(목)'
 AUTHOR = '한국항공대학교 컴퓨터공학과'
 TITLE = f'편한수강 {VERSION}'
 # 코드 누더기 상태 : 78%

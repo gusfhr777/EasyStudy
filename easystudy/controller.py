@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 import m3u8_To_MP4
 
 
-from loggingInterface import log_print, report
+from logger import log_print, report
 from model import *
 
 class DriverController: #드라이버 제어 클래스.

@@ -1,11 +1,15 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,pycharm,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,pycharm,python
 
+## vscode.
+.vscode/
+
 unwatchedData.pickle
 courseData.pickle
 logs/
 dist/
 build/
+output/
 backUp/
 sketch/
 ffmpeg.exe

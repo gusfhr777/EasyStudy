@@ -42,6 +42,11 @@ TITLE = f'편한수강 {VERSION}'
         #     self.log_text.see(tk.END)
         #     self.log_text.config(state=tk.DISABLED)
 
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath('.'), relative_path)
+
 class TextRedirector:
     def __init__(self, text_widget):
         self.text_widget = text_widget
@@ -76,7 +81,8 @@ class View():
         self.root.title(TITLE)
         self.root.geometry("400x500")
         try:
-            self.root.iconbitmap("eagle.ico")
+            icon_path = resource_path('resources/eagle.ico')
+            self.root.iconbitmap(icon_path)
         except:pass
         log_print(f'편한수강 {VERSION}\n제작 : {AUTHOR}\n본 프로그램은 항공대 LMS 전용입니다.')
 
